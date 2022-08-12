@@ -102,3 +102,4 @@ source $ZSH/oh-my-zsh.sh
 #
 eval "$(starship init zsh)"
 [ -f ~/aliases/.kubectl_aliases ] && source ~/aliases/.kubectl_aliases
+[ -f ~/aliases/.terraform_aliases ] && source ~/aliases/.terraform_aliases
