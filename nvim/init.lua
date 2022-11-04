@@ -1,21 +1,18 @@
-require "user.options"
-require "user.keymaps"
-require "user.plugins"
-require "user.colorscheme"
-require "user.cmp"
-require "user.lsp"
-require "user.telescope"
-require "user.treesitter"
-require "user.autopairs"
-require "user.comment"
-require "user.gitsigns"
-require "user.nvim-tree"
-require "user.bufferline"
-require "user.lualine"
-require "user.toggleterm"
-require "user.project"
-require "user.impatient"
-require "user.indentline"
-require "user.alpha"
-require "user.whichkey"
-require "user.autocommands"
+require("doni.plugins-setup")
+require("doni.core.options")
+require("doni.core.keymaps")
+require("doni.core.colorscheme")
+require("doni.plugins.comment")
+require("doni.plugins.nvim-tree")
+require("doni.plugins.lualine")
+require("doni.plugins.telescope")
+require("doni.plugins.nvim-cmp")
+require("doni.plugins.lsp.mason")
+require("doni.plugins.lsp.lspsaga")
+require("doni.plugins.lsp.lspconfig")
+require("doni.plugins.lsp.null-ls")
+require("doni.plugins.autopairs")
+require("doni.plugins.treesitter")
+require("doni.plugins.gitsigns")
+require("doni.plugins.alpha")
+require("doni.plugins.whichkey")
