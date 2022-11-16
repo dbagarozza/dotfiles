@@ -76,6 +76,24 @@ lspconfig["cssls"].setup({
 	on_attach = on_attach,
 })
 
+-- configure gopls server
+lspconfig['gopls'].setup ({
+	capabilities = capabilities,
+	on_attach = on_attach
+})
+
+-- configure terraformls server
+lspconfig['terraformls'].setup ({
+	capabilities = capabilities,
+	on_attach = on_attach
+})
+
+-- configure yamlls server
+lspconfig['yamlls'].setup ({
+	capabilities = capabilities,
+	on_attach = on_attach
+})
+
 -- configure tailwindcss server
 lspconfig["tailwindcss"].setup({
 	capabilities = capabilities,

@@ -61,6 +61,8 @@ return packer.startup(function(use)
 	--whichkey
 	use("folke/which-key.nvim")
 
+	use({ "akinsho/toggleterm.nvim"})
+
 	-- fuzzy finding w/ telescope
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
@@ -86,9 +88,15 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
+    -- go
+	use("fatih/vim-go") -- additional functionality for go server
+
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
+
+	-- coc
+	use({ "neoclide/coc.nvim", branch = "release" }) -- enhanced lsp uis
 
 	-- treesitter configuration
 	use({
