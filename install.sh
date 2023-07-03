@@ -20,6 +20,8 @@ brew install wget
 brew install jq
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
+brew install koekeishiya/formulae/skhd
+brew install koekeishiya/formulae/yabai
 brew install fyabai --head
 brew install sketchybar
 brew install starship
@@ -42,6 +44,7 @@ brew install krew
 brew install kubie
 brew tap kubeshark/kubeshark
 brew install kubeshark
+brew install fzf
 
 # Kubectl Plugins
 kubectl krew install stern
