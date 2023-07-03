@@ -10,7 +10,8 @@
 [ -f ~/aliases/.kubectl_aliases ] && source ~/aliases/.kubectl_aliases
 [ -f ~/aliases/.terraform_aliases ] && source ~/aliases/.terraform_aliases 
 
-alias kns="kubens"
+alias kns="kubie ns"
+alias ktx="kubie ctx"
 alias lzg="lazygit"
 alias vim="nvim"
 alias ll="ls -lisa"

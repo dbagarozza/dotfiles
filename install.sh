@@ -33,3 +33,12 @@ brew install warrensbox/tap/tfswitch
 brew install azure-cli
 brew install node
 brew install slides
+brew install krew
+brew install kubie
+brew tap kubeshark/kubeshark
+brew install kubeshark
+
+# Kubectl Plugins
+kubectl krew install stern
+kubectl krew install modify-secret
+kubectl krew install get-all
