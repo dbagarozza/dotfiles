@@ -21,6 +21,7 @@ brew install jq
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install zsh-autocomplete
+brew install zsh-completions
 brew install koekeishiya/formulae/skhd
 brew install koekeishiya/formulae/yabai
 brew install fyabai --head
@@ -40,12 +41,18 @@ brew install --cask postman
 brew install warrensbox/tap/tfswitch
 brew install azure-cli
 brew install node
+brew install kubectx
 brew install slides
 brew install krew
-brew install kubie
 brew tap kubeshark/kubeshark
 brew install kubeshark
 brew install fzf
+
+# Kubectx && Kubens Autocompletion
+sudo git clone https://github.com/ahmetb/kubectx ~/kubectx
+sudo cp -r ~/kubectx/completion ~/completion
+sudo rm -rf ~/kubectx
+sudo chmod -R 755 ~/completion
 
 # Install fzf
 $(brew --prefix)/opt/fzf/install
@@ -54,3 +61,6 @@ $(brew --prefix)/opt/fzf/install
 kubectl krew install stern
 kubectl krew install modify-secret
 kubectl krew install get-all
+
+
+echo "copy dotfiles..."

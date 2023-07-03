@@ -12,8 +12,8 @@
 [ -f ~/aliases/.kubectl_aliases ] && source ~/aliases/.kubectl_aliases
 [ -f ~/aliases/.terraform_aliases ] && source ~/aliases/.terraform_aliases 
 
-alias kns="kubie ns"
-alias ktx="kubie ctx"
+alias kns="kubens"
+alias ktx="kubectx"
 alias lzg="lazygit"
 alias vim="nvim"
 alias ll="ls -lisa"
@@ -21,7 +21,9 @@ alias ll="ls -lisa"
 eval "$(starship init zsh)"
 
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+fpath=(~/completion $fpath)
 autoload -U +X compinit && compinit
 source <(kubectl completion zsh)
+
 [[ -f $HOME/.fzf.zsh ]] && source $HOME/.fzf.zsh
 export PATH=$PATH:~/terraform/bin:/opt/homebrew/bin/
