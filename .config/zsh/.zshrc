@@ -21,6 +21,3 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 autoload -U +X compinit && compinit
 source <(kubectl completion zsh)
 export PATH=$PATH:~/terraform/bin:/opt/homebrew/bin/
-
-autoload -Uz compinit
-compinit
