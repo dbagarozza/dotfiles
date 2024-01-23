@@ -18,6 +18,11 @@ brew install neovim
 brew install tree
 brew install wget
 brew install jq
+brew install tig
+brew install shfmt
+brew install jump
+brew install bat
+brew install pwgen
 brew install zsh-autosuggestions
 brew install zsh-syntax-highlighting
 brew install zsh-autocomplete
